@@ -1,5 +1,6 @@
 package implementslegend.mod.vaultfaster.event
 
+import com.aaronbarnaby.grownupmod.objectives.PacmanObjective
 import implementslegend.mod.vaultfaster.mixin.JigsawRootAccessor
 import iskallia.vault.block.HeraldControllerBlock
 import iskallia.vault.block.ObeliskBlock
@@ -90,6 +91,7 @@ object ObjectiveTemplateEvent:Event<ObjectiveTemplateEvent, ObjectiveTemplateDat
     }
     private fun getTemplateForObjective(objective: Objective) =
         when(objective){
+            is PacmanObjective -> LODESTONE_OBJECTIVE_TEMPLATE
             is ScavengerObjective -> SCAVENGER_OBJECTIVE_TEMPLATE
             is MonolithObjective -> MONOLITH_OBJECTIVE_TEMPLATE
             is ObeliskObjective, is LegacyObeliskObjective -> OBELISK_OBJECTIVE_TEMPLATE

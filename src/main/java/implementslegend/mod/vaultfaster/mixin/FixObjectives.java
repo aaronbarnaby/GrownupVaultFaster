@@ -1,5 +1,6 @@
 package implementslegend.mod.vaultfaster.mixin;
 
+import com.aaronbarnaby.grownupmod.objectives.PacmanObjective;
 import implementslegend.mod.vaultfaster.event.ObjectiveTemplateEvent;
 import iskallia.vault.core.event.Event;
 import iskallia.vault.core.event.common.BlockSetEvent;
@@ -19,7 +20,7 @@ import java.util.function.Consumer;
 * removal of CommonEvents.BLOCK_SET_EVENT caused objectives to stop working; this is a fix (but herald still doesn't work)
 *
 * */
-@Mixin({ScavengerObjective.class, LodestoneObjective.class, HeraldObjective.class, ObeliskObjective.class, MonolithObjective.class, CrakePedestalObjective.class, LegacyObeliskObjective.class, GridGatewayObjective.class})
+@Mixin({ScavengerObjective.class, LodestoneObjective.class, HeraldObjective.class, ObeliskObjective.class, MonolithObjective.class, CrakePedestalObjective.class, LegacyObeliskObjective.class, GridGatewayObjective.class, PacmanObjective.class})
 public class FixObjectives {
 
 
