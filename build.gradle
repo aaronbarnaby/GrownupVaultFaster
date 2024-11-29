@@ -160,7 +160,7 @@ dependencies {
     implementation fg.deobf("curse.maven:alexs-mobs-426558:${alexs_mobs_version}")
     implementation fg.deobf("curse.maven:quark-243121:${quark_version}")
     implementation fg.deobf("curse.maven:jei-238222:${jei_version}")
-    implementation fg.deobf("blank:grownupmod-${minecraft_version}:3.0.2")
+    implementation fg.deobf("blank:grownupmod-${minecraft_version}:3.1.0")
 
     // Dependencies for Runtime Debug
     implementation fg.deobf("curse.maven:architects-palette-433862:${architects_palette_version}")
